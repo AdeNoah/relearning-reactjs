@@ -11,7 +11,7 @@ const MyComponent = () => {
     }
 
     const incrementAge = () => {
-        setAge(age + 1)
+        setAge(prevAge => prevAge + 1)
     }
     const decrementAge = () => {
         setAge(prevAge => Math.max(0, prevAge - 1));
